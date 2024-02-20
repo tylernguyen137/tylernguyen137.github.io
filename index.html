@@ -7,6 +7,12 @@
         font-size: 80px;
        
         }
+        p2{
+        color: #131111;
+        text-align: center;
+        font-size: 45px;
+       
+        }    
         #body{
             background-color: #AF5F5F;
 
@@ -62,16 +68,7 @@
                 document.getElementById("catyay").style.display = "block";
             }
         }
-        function toggleText() {
-            var explanation = document.getElementById("explanation");
-            if (explanation.style.display === "none") {
-                explanation.style.display = "block";
-            } else {
-                explanation.style.display = "none";
-            }
-        }
         
-
     </script>
     <body id="body">
         <div>
@@ -79,12 +76,9 @@
             HAPPY BIRTHDAY JEFF !!!
         </p>
             
-        <p id = "explanation" style="display: none;">
+        <p2 id = "explanation" style="display: none;">
             Here's 19 (digital) letters for your 19th birthday! <3
-        </p>
-            
-        <button id ="toggleButton" onclick="toggleText()">
-        </button>
+        </p2>
             
         <button id ="button" onclick = "hideAllElements('good')">
             please please please please
