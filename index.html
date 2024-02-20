@@ -60,12 +60,17 @@
                 document.getElementById("p2").style.display = "inline";
                 document.getElementById("cad").play();
                 document.getElementById("catyay").style.display = "block";
-
-                
             }
-            
         }
-
+        function toggleText() {
+            var explanation = document.getElementById("explanation");
+            if (explanation.style.display === "none") {
+                explanation.style.display = "block";
+            } else {
+                explanation.style.display = "none";
+            }
+        }
+        
 
     </script>
     <body id="body">
@@ -73,6 +78,14 @@
         <p id = "p">
             HAPPY BIRTHDAY JEFF !!!
         </p>
+            
+        <p id = "explanation" style="display: none;">
+            Here's 19 (digital) letters for your 19th birthday! <3
+        </p>
+            
+        <button id ="toggleButton" onclick="toggleText()">
+        </button>
+            
         <button id ="button" onclick = "hideAllElements('good')">
             please please please please
         </button>
