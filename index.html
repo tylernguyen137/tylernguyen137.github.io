@@ -17,7 +17,7 @@
             background-color: #AF5F5F;
 
         }
-        #button{
+        #Kevinbutton{
             border:none;
             color: #EF7272;
             background-color: #A02020;
@@ -31,9 +31,9 @@
             margin:10px;
 
         }
-        #button:hover {background-color: #CD4444}
+        #Kevinbutton:hover {background-color: #CD4444}
 
-        #button:active {
+        #Kevinbutton:active {
         background-color: #CD4444;
         box-shadow: 0 3px grey;
         transform: translateY(4px);
@@ -55,7 +55,7 @@
     </style>
     <script>
         function hideAllElements(ending){
-            let elements = ["button", "button2", "p", "explanation"]
+            let elements = ["Kevinbutton", "button2", "p", "explanation"]
             for(let i=0; i<4; i++){
                 document.getElementById(elements[i]).style.display = "none";
             }
@@ -80,7 +80,7 @@
             Here's 19 (digital) letters for your 19th birthday! <3
         </p>
             
-        <button id ="button" onclick = "hideAllElements('good')">
+        <button id ="Kevinbutton" onclick = "hideAllElements('good')">
             Kevin
         </button>
         </div>
