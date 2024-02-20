@@ -10,8 +10,8 @@
         #explanation{
         color: #131111;
         text-align: center;
-        bottom: 10px;
         font-size: 45px;
+        top: 15%;
        
         }    
         #body{
@@ -56,8 +56,8 @@
     </style>
     <script>
         function hideAllElements(ending){
-            let elements = ["button", "button2", "p","heart"]
-            for(let i=0; i<4; i++){
+            let elements = ["button", "button2", "p", "explanation", "heart"]
+            for(let i=0; i<5; i++){
                 document.getElementById(elements[i]).style.display = "none";
             }
             if (ending =="bad"){
