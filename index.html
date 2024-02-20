@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        p{
+        color:palevioletred;
+        text-align: center;
+        font-size: 100px;
+       
+        }
+        #body{
+            background-color: pink;
+
+        }
+        #button{
+            border:none;
+            color: pink;
+            background-color: palevioletred;
+            padding: 30px;
+            border-radius: 10px;
+            font-size: 25px;
+            text-align: center;
+            box-shadow: 0 7px grey;
+            position: relative;
+            left: 40%;
+            margin:10px;
+
+        }
+        #button:hover {background-color: violet}
+
+        #button:active {
+        background-color: violet;
+        box-shadow: 0 3px grey;
+        transform: translateY(4px);
+        }
+        #button2{
+            color: black;
+            background-color: maroon;
+            padding: 15px;
+            border-radius: 10;
+            font-size: 15px;
+            position: relative;
+            left:48%;
+            bottom: 50%;
+            margin:10px;
+
+
+        }
+
+    </style>
+    <script>
+        function hideAllElements(ending){
+            let elements = ["button", "button2", "p","heart"]
+            for(let i=0; i<4; i++){
+                document.getElementById(elements[i]).style.display = "none";
+            }
+            if (ending =="bad"){
+                document.getElementById("image").style.display ="block";
+                document.getElementById("audio").play();
+            }else if(ending == "good"){
+                document.getElementById("p2").style.display = "inline";
+                document.getElementById("cad").play();
+                document.getElementById("catyay").style.display = "block";
+
+                
+            }
+            
+        }
+
+
+    </script>
+    <body id="body">
+        <div>
+        <p id = "p">
+            will you be my big booty balentine
+        </p>
+        <button id ="button" onclick = "hideAllElements('good')">
+            please please please please
+        </button>
+        </div>
+        <div>
+        <button id="button2" onclick="hideAllElements('bad')">nahhh</button>
+        
+        </div>
+        <img hidden id = "image"src="jogo-sukuna.gif"style="position:relative;margin-left: auto;margin-right: auto;"width="1500" height="900">
+        <audio id="audio">
+            <source src = "ichiko aoba - asleep among endives (sped up)-[AudioTrimmer.com]-[AudioTrimmer.com].mp3" type="audio/mpeg">
+        </audio>
+        <img id="heart" src = "heart-faces-happy-emoticons-tongue-vector-1922325-removebg-preview.png"style="position:relative;margin-left: auto;margin-right: auto;display:block">
+        <p hidden id = "p2">Yippie :3</p>
+        <img hidden id = "catyay" src = "cat.gif" style="position:relative;margin-left: auto;margin-right: auto;"width="900" height="900">
+        <audio id="cad">
+            <source src = "ssstik.io_1707872409330.mp3" type="audio/mpeg">
+        </audio>
+    </body>
+
+</html>
